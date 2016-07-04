@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:drawableTop="@mipmap/icon_train"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:text="考试系统有新的题库更新"
+        android:textColor="@color/base_color"
+        android:textSize="@dimen/SecTextSize" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:text="是否更新？"
+        android:textColor="@color/base_color"
+        android:textSize="@dimen/SecTextSize" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/base_color" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/list_selector"
+            android:gravity="center"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:text="跳过"
+            android:textColor="@color/base_text_color" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="@color/base_color" />
+
+        <TextView
+            android:id="@+id/right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/list_selector"
+            android:gravity="center"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:text="更新"
+            android:textColor="@color/base_text_color" />
+    </LinearLayout>
+
+
+</LinearLayout>

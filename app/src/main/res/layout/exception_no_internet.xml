@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:gravity="center_vertical|fill_vertical|center_horizontal|fill_horizontal|clip_vertical|clip_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/exception_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/exception.title"
+            android:text="@string/dynamicbox_exception_title" />
+
+        <!--android:drawableTop="@mipmap/ic_network_off"-->
+        <TextView
+            android:id="@+id/exception_message"
+            style="@style/exception.message"
+            android:drawablePadding="16dp"
+
+            android:layout_centerInParent="true"
+            android:text="网络连接失败"
+            android:textColor="#808080" />
+
+        <Button
+            android:id="@+id/exception_button"
+            style="@style/exception.button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/exception_message"
+            android:layout_centerHorizontal="true"
+            android:text="重试" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="main_menu">
+        <item>@string/fragment0_title</item>
+        <item>@string/fragment1_title</item>
+        <item>@string/fragment2_title</item>
+        <item>@string/fragment3_title</item>
+    </string-array>
+
+
+
+</resources>

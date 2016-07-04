@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/icon_game_success"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="恭喜您顺利通过本级别测试"
+            android:textColor="#010302"
+            android:textSize="@dimen/SecTextSize" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@mipmap/icon_test_line" />
+
+        <!-- <RatingBar
+             android:id="@+id/star"
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_gravity="center_horizontal"
+             android:layout_marginTop="12dp"
+             android:
+             android:text="三星"/>-->
+
+
+        <RatingBar
+            android:id="@+id/star"
+            style="@style/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:numStars="3"
+            android:rating="3"></RatingBar>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="答对题目"
+                android:textColor="@color/base_text_color"
+                android:textSize="@dimen/SecTextSize" />
+
+            <TextView
+                android:id="@+id/rightNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="5"
+                android:textColor="#3593DD"
+                android:textSize="@dimen/SecTextSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="闯关用时"
+                android:textColor="@color/base_text_color"
+                android:textSize="@dimen/SecTextSize" />
+
+            <TextView
+                android:id="@+id/timeUse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="17分钟30秒"
+                android:textColor="#3593DD"
+                android:textSize="@dimen/SecTextSize" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="16dp"
+            android:background="@drawable/selector_login"
+            android:gravity="center"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:text="确定"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

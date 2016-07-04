@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/note"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp"
+    android:background="@drawable/shape_note_bg"
+    android:gravity="top"
+    android:hint="+笔记"
+    android:padding="8dp"
+    android:minLines="4"
+    android:textColor="@color/base_text_color"
+    android:textSize="@dimen/SecTextSize"
+    android:textCursorDrawable="@null"/>

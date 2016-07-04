@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="12dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XXXX"
+        android:textColor="@color/base_text_color"
+        android:textSize="@dimen/SecTextSize" />
+
+    <TextView
+        android:id="@+id/answerA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="(A)"
+        android:textColor="@color/base_text_color"
+        android:textSize="@dimen/SecTextSize" />
+
+    <TextView
+        android:id="@+id/answerB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="(B)"
+        android:textColor="@color/base_text_color"
+        android:textSize="@dimen/SecTextSize" />
+
+    <TextView
+        android:id="@+id/answerC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="(C)"
+        android:textColor="@color/base_text_color"
+        android:textSize="@dimen/SecTextSize" />
+
+    <TextView
+        android:id="@+id/answerD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="(D)"
+        android:textColor="@color/base_text_color"
+        android:textSize="@dimen/SecTextSize" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_answer_btn_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="A"
+            android:textColor="@drawable/selector_answer_btn" />
+
+        <RadioButton
+            android:id="@+id/radioB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/selector_answer_btn_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="B"
+            android:textColor="@drawable/selector_answer_btn" />
+
+        <RadioButton
+            android:id="@+id/radioC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/selector_answer_btn_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="C"
+            android:textColor="@drawable/selector_answer_btn" />
+
+        <RadioButton
+            android:id="@+id/radioD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/selector_answer_btn_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="D"
+            android:textColor="@drawable/selector_answer_btn" />
+    </RadioGroup>
+
+    <include layout="@layout/the_exercise_answer" />
+
+
+</LinearLayout>
